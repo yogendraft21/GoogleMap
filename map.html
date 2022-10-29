@@ -1,0 +1,49 @@
+<html>
+ <head>
+    <title>MapmyIndia</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="desciption" content="Mapmyindia Direction Plugin">
+    <script src="https://apis.mapmyindia.com/advancedmaps/v1/<YOUR_KEY>/map_load?v=1.5"></script>
+    <script src="https://apis.mapmyindia.com/advancedmaps/api/<YOUR_TOKEN>/map_sdk_plugins"></script>
+    <style>
+        body{margin: 0}
+        #map{
+            width: 100%; 
+            height: 90%; 
+            margin: auto; 
+            padding: 0;
+         }
+        #direction{
+            color: #000;
+            max-width: 99%;
+            width:300px;
+            position:absolute;
+            z-index: 999;
+            font-size: 15px;
+            padding:10px;
+            border: 1px solid #ddd;
+            outline: none !important;
+            top:55px;border-radius:10px;
+            margin:2px 4px;
+        }
+        .header{
+            text-align: center;
+        }
+        h1{
+            margin: 10px;
+            color: rgb(235, 152, 44);
+        }
+        .leaflet-top{
+            margin-left: 20px;
+        }
+    </style>
+    </head>
+    <body>
+        <div class="header">
+            <h1>Map My India Find Route Between Two Places:-By The Noob Programmer</h1>
+        </div>
+        <div id="map"></div>
+        <div id="direction"></div>
+       <script src="./app.js"></script>
+    </body>
+</html>
